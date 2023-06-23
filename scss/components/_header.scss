@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+header{    
+    text-align: $site-header-alignment;
+    padding: $site-header-padding;
+    
+}

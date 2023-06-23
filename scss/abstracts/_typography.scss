@@ -1,0 +1,26 @@
+@use './colors' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+$ff-poppins: 'Figtree', 'sans';
+$ff-base: $ff-poppins;
+
+$fw-700: 700;
+$fw-600: 600;
+$fw-500: 500;
+$fw-400: 400;
+
+
+
+$fw-default: $fw-400;
+$fw-bold: $fw-700;
+
+h1{
+    color: $clr-tertiary-100;
+
+}
+
+h2{
+    font-weight: $fw-default;
+    font-size: 20px;
+}

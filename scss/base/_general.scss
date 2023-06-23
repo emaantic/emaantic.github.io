@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+
+
+body{
+    background-color: $clr-primary-500;    
+    color: $clr-secondary-100;
+    font-family: $ff-base;
+}
+
+a, button, input {
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+  
+    &:focus-visible {
+      outline: 1.5px solid $clr-secondary-200;
+      outline-offset: 2px;
+    }
+  }
+
+.wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,57 @@
+@use './colors' as *;
+@use './typography' as *;
+
+
+$size-1: 0.25rem;
+$size-2: 0.5rem; //8px
+$size-3: 0.75rem; //12px
+$size-4: 1rem; //16px
+$size-5: 1.25rem; //20px
+$size-6: 1.5rem; //24px
+$size-7: 1.75rem; 
+$size-8: 2rem; //32px
+$size-9: 2.5rem; 
+$size-10: 3rem; 
+$size-11: 4rem; 
+$size-12: 5rem; 
+$size-13: 6rem; 
+$size-14: 8rem; 
+$size-15: 10rem; 
+
+$border-radius-1: $size-2; //8px
+$border-radius-2: $size-3; //12px
+$border-radius-3: $size-5; //20px
+
+//card
+
+$card-border-radius: $border-radius-3;
+$card-bg-clr: $clr-primary-300;
+$card-padding: $size-8 $size-10;
+$card-box-shadow: $box-shadow-2;
+
+//inner-card
+$inner-card-border-radius: $border-radius-1;
+$inner-card-bg-clr: $clr-primary-200;
+$inner-card-padding: $size-8 $size-10;
+
+//button
+$btn-font-size: $size-4;
+$btn-font-weight: $fw-bold; //define it in typography
+$btn-border-radius: $border-radius-2;
+$btn-padding-deafult: $size-2 $size-8;// 8px 32px
+$btn-padding-sm: $size-1 $size-3;// 8px 32px
+$btn-box-shadow: $box-shadow-1;
+
+//input
+$input-bg-clr: $clr-primary-300;
+$input-text-clr: $clr-secondary-200;
+$input-font-size: $size-4;
+$input-border-radius: $border-radius-1;
+$input-padding: $size-2 $size-2;
+
+
+//header
+
+$site-header-alignment: center;
+$site-header-padding: $size-4 0;
+

@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.order-radius-1{
+    border-radius: $border-radius-1;
+
+}
+
+.border-radius-2{
+    border-radius: $border-radius-2;
+
+}
+
+.border-radius-3{
+    border-radius: $border-radius-3;
+
+}
+

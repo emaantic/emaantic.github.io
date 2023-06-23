@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.card{
+    background-color: $card-bg-clr;
+    border-radius: $card-border-radius;
+    padding: $card-padding;
+    box-shadow: $card-box-shadow;
+
+}
+
+.inner-card{
+    background-color: $inner-card-bg-clr;
+    border-radius: $inner-card-border-radius;
+    padding: $card-padding;
+
+}
+

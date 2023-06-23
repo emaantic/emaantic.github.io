@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+
+
+
+.btn{
+    cursor:pointer;
+    border: 3px solid $clr-tertiary-100;
+    border-radius: $btn-border-radius;
+    font-size: $btn-font-size;
+    padding: $btn-padding-deafult;
+    box-shadow: $btn-box-shadow;
+    font-weight: $btn-font-weight;
+
+     
+    
+    
+    &.btn-primary{
+        
+        color: $clr-primary-300;
+        background-color: $clr-tertiary-100;
+        border: 3px solid $clr-tertiary-100;
+
+        
+        &:hover{
+            color: $clr-tertiary-100;
+            background-color: transparent;
+                    border: 3px solid $clr-tertiary-100;
+    
+    
+        }
+        //active
+          &:active{
+            color: $clr-primary-300;
+            background-color: $clr-tertiary-200;
+            border: 3px solid $clr-tertiary-200;
+        }  
+    }
+   
+
+    //visited
+    /*&.btn-primary:visited{
+        color: $clr-primary-300;
+        background-color: $clr-tertiary-100;
+        border: 2px solid $clr-tertiary-100;
+
+    }*/
+
+    
+    
+    
+    //hover
+     
+        /*
+    
+    &.btn-primary:active, &.btn-primary:focus{
+        color: $clr-primary-300;
+        background-color: $clr-tertiary-200;
+        border: 3px solid $clr-tertiary-200;
+        outline: none;
+
+    }*/
+    
+    
+}

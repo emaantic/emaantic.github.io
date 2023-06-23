@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as *;
+
+
+
+
+$sizes: 0, $size-1, $size-2, $size-3, $size-4, $size-5, $size-6;
+//       1     2      3
+//       0   0.5rem
+@each $size in $sizes {
+   
+    @debug "Space value: #{$size}"; // 0.r5em
+    
+    $i: index($sizes, $size) - 1;  //1-1 = 0
+    @debug "Index value: #{$i}";
+    .m-#{$i} { //.m-0  .,#{size}  .-0.5rem
+        margin: $size; //0.5rem
+    }
+    .mt-#{$i} {
+        margin-top: $size; 
+    }
+    .mb-#{$i} {
+        margin-bottom: $size; 
+    }
+    .ml-#{$i} {
+        margin-left: $size; 
+    }
+    .mr-#{$i} {
+        margin-right: $size; 
+    }
+    .mx-#{$i} {
+        margin-left: $size; 
+        margin-right: $size; 
+    }
+    .my-#{$i} {
+        margin-top: $size; 
+        margin-bottom: $size; 
+    }
+
+    .p-#{$i} {
+        padding: $size; //padding:  0.5rem
+    }
+    .pt-#{$i} {
+        padding-top: $size; 
+    }
+    .pb-#{$i} {
+        padding-bottom: $size; 
+    }
+    .pl-#{$i} {
+        padding-left: $size; 
+    }
+    .pr-#{$i} {
+        padding-right: $size; 
+    }
+    .px-#{$i} {
+        padding-left: $size; 
+        padding-right: $size; 
+    }
+    .py-#{$i} {
+        padding-top: $size; 
+        padding-bottom: $size; 
+    }
+    .g-#{$i} {
+        gap: $size; //padding:  0.5rem
+    }
+
+
+}
