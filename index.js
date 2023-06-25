@@ -32,7 +32,7 @@ const getUser = async (username) => {
 			const bio = response.bio ? response.bio : "No Bio";
 			const email = response.email ? response.email : "No Email";
 			const location = response.location ? response.location : "No Location";
-			const blog = response.blog ? response.blog : "No blog";
+			const blog = response.blog ? response.blog : "No Blog";
 
 
 			const date_created = response.created_at.split('T')[0];
@@ -45,62 +45,74 @@ const getUser = async (username) => {
 
 
 			const card = `
-				<h2>Results:</h2>
+				<h2 class="p-bold-fs-24 mt-6 mb-4" style="color: #FCB076">Results:</h2>
 				<article class="card">
 					<div class="d-flex g-4">
 						<div>
 							<img class="avatar" src="https://github.com/${username}.png" alt="avatar">
 						</div>
 						<div>                                                
-							<div class="d-flex align-center g-2">              
-								<img src="./icon/icon_clock.svg" alt="" width="16" height="16">                            
+							<div class="d-flex align-center g-2"> 
+								<div class="icon-container">             
+									<img src="./icon/icon_clock.svg" alt="">
+								</div>                            
 								<p>Joined ${day}. ${month} ${year}</p>                              
 							</div>
 							<div>
-								<p>${name}</p>    
+								<p class="p-bold-fs-24">${name}</p>    
 							</div>    
 							<div>
-								<p>${username}</p>    
+								<p class="p-bold-fs-24" style="color: #FCB076">${username}</p>    
 							</div>                                            
 						</div>	
 					</div>
 					<div class="inner-card d-flex row justify-content-between">  
 							<div>
-									<p>${repositories}</p> 
-									<p>Repositories</p>     
+									<p class="p-bold-fs-24">${repositories}</p> 
+									<p class="p-bold-fs-24">Repositories</p>     
 							</div>  
 							<div>
-									<p>${followers}</p>
-									<p>Followers</p>     
+									<p class="p-bold-fs-24">${followers}</p>
+									<p class="p-bold-fs-24">Followers</p>     
 							</div> 
 							<div>
-									<p>${following}</p>   
-									<p>Following</p>      
+									<p class="p-bold-fs-24">${following}</p>   
+									<p class="p-bold-fs-24">Following</p>      
 							</div> 
 					</div>
 					<div class="d-flex align-center g-3">
-							<img src="./icon/icon_building.svg" alt="" width="16" height="20"> 
-							<p>${company}</p> 
+						<div class="icon-container">
+							<img src="./icon/icon_building.svg" alt="">
+						</div> 
+						<p class=${company === 'Not Provided' ? '"text-muted"' : '""'}>${company}</p> 
 					</div>
-					<div class="d-flex" >
+					<div class="d-flex">
 						<div style="width: 50%">
 							<div class="d-flex align-center g-3">
-								<img src="./icon/icon_id.svg " alt="" width="16" height="20"> 
+								<div class="icon-container">
+									<img src="./icon/icon_id.svg " alt=""> 
+								</div>
 								<p class=${bio === 'No Bio' ? '"text-muted"' : '""'}>${bio}</p>
 							</div>
 							<div class="d-flex align-center g-3">
-								<img src="./icon/icon_email.svg" alt="" width="20" height="14"> 
-								<p>${email}</p>
+								<div class="icon-container">
+									<img src="./icon/icon_email.svg" alt="">
+								</div> 
+								<p class=${email === 'No Email' ? '"text-muted"' : '""'}>${email}</p>
 							</div>
 						</div>                        
 						<div style="width: 50%">
 							<div class="d-flex align-center g-3">
-								<img src="./icon/icon_location_pin.svg " alt="" width="16" height="20"> 
-								<p>${location}</p>
+								<div class="icon-container">
+									<img src="./icon/icon_location_pin.svg " alt=""> 
+								</div>
+								<p class=${location === 'No Location' ? '"text-muted"' : '""'}>${location}</p>
 							</div>
 							<div class="d-flex align-center g-3">
-								<img src="./icon/icon_link.svg" alt="" width="20" height="14"> 
-								<p>${blog}</p>
+								<div class="icon-container">
+									<img src="./icon/icon_link.svg" alt=""> 
+								</div>
+								<p class=${blog === 'No Blog' ? '"text-muted"' : '""'}>${blog}</p>
 							</div>                    
 						</div>
 					</div>            

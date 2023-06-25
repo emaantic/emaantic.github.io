@@ -8,6 +8,12 @@ h2 {
   font-size: 20px;
 }
 
+.p-bold-fs-24 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 6px;
+}
+
 body {
   background-color: #161E31;
   color: white;
@@ -121,6 +127,14 @@ input[type=text] {
   height: 148px;
   width: 148px;
   border-radius: 50%;
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
 }
 
 .order-radius-1 {

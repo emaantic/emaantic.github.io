@@ -15,12 +15,18 @@ $fw-400: 400;
 $fw-default: $fw-400;
 $fw-bold: $fw-700;
 
-h1{
+h1 {
     color: $clr-tertiary-100;
 
 }
 
-h2{
+h2 {
     font-weight: $fw-default;
     font-size: 20px;
+}
+
+.p-bold-fs-24 {
+    font-weight: $fw-600;
+    font-size: 24px;
+    margin: 6px ;
 }
