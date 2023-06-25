@@ -54,7 +54,7 @@ const getUser = async (username) => {
 						<div>                                                
 							<div class="d-flex align-center g-2"> 
 								<div class="icon-container">             
-									<img src="./icon/icon_clock.svg" alt="">
+									<img src="./icon/icon_clock.svg" alt=" "class="icon">
 								</div>                            
 								<p>Joined ${day}. ${month} ${year}</p>                              
 							</div>
@@ -90,13 +90,13 @@ const getUser = async (username) => {
 						<div style="width: 50%">
 							<div class="d-flex align-center g-3">
 								<div class="icon-container">
-									<img src="./icon/icon_id.svg " alt=""> 
+									<img src="./icon/icon_id.svg " alt="" class="icon"> 
 								</div>
 								<p class=${bio === 'No Bio' ? '"text-muted"' : '""'}>${bio}</p>
 							</div>
 							<div class="d-flex align-center g-3">
 								<div class="icon-container">
-									<img src="./icon/icon_email.svg" alt="">
+									<img src="./icon/icon_email.svg" alt="" class="icon">
 								</div> 
 								<p class=${email === 'No Email' ? '"text-muted"' : '""'}>${email}</p>
 							</div>
@@ -104,13 +104,13 @@ const getUser = async (username) => {
 						<div style="width: 50%">
 							<div class="d-flex align-center g-3">
 								<div class="icon-container">
-									<img src="./icon/icon_location_pin.svg " alt=""> 
+									<img src="./icon/icon_location_pin.svg " alt="" class="icon"> 
 								</div>
 								<p class=${location === 'No Location' ? '"text-muted"' : '""'}>${location}</p>
 							</div>
 							<div class="d-flex align-center g-3">
 								<div class="icon-container">
-									<img src="./icon/icon_link.svg" alt=""> 
+									<img src="./icon/icon_link.svg" alt="" class="icon"> 
 								</div>
 								<p class=${blog === 'No Blog' ? '"text-muted"' : '""'}>${blog}</p>
 							</div>                    
